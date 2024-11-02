@@ -15,4 +15,10 @@ describe('String Calculator', () => {
     test(`returns 10 for string '1, 2, 2, 1, 4' `, () => { 
         expect(add('1, 2, 2, 1, 4')).toBe(10);
     })
+    test(`returns 6 for string '1\n2,3' `, () => { 
+        expect(add('1\n2,3')).toBe(6);
+    })
+    test(`returns 3 for string "//;\n1;2" `, () => { 
+        expect(add("//;\n1;2")).toBe(3);
+    })
 })
