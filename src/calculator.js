@@ -4,12 +4,6 @@ const add = (numbers) => {
     if(!numbers) return 0;
 
     const delimiters = [',', '\n']
-    var customDelimiters 
-    // = numbers.match(/^\/\/(.*?)\n/)
-    // if (customDelimiters) {
-    //     delimiters.push(customDelimiters[1])
-    //     numbers = numbers.slice(4)
-    // }
 
     if (numbers.startsWith("//")) {
         numbers = numbers.slice(2)
