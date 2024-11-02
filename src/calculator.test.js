@@ -27,4 +27,7 @@ describe('String Calculator', () => {
     test(`returns negative numbers not allowed -1,-2 for string '-1,-2,5' `, () => { 
         expect(() => add('-1,-2,5')).toThrow("negative numbers not allowed -1,-2");
     })
+    test('return 1 for string 1,', () => {
+        expect(add('1,')).toBe(1);
+    })
 })

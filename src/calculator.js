@@ -11,8 +11,7 @@ const add = (numbers) => {
         numbers = numbers.slice(4)
     }
     
-    var numbersList = numbers.split(new RegExp(`[${delimiters.join("")}]`)).map((number) => parseInt(number))
-
+    var numbersList = numbers.split(new RegExp(`[${delimiters.join("")}]`)).filter(Boolean).map((number) => parseInt(number))
     var negativeNumbers = numbersList.filter((number) => number < 0)
     if (negativeNumbers.length > 0) throw new Error(`negative numbers not allowed ${negativeNumbers.join(",")}`)
     

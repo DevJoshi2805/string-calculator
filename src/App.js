@@ -26,8 +26,7 @@ function App() {
     } catch (e) { 
       setError(e.message)
       setResult(null)
-    }
-    
+    } 
   }
 
   return (
